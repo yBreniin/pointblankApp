@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'cart-modal',
+    loadChildren: () => import('./pages/cart-modal/cart-modal.module').then( m => m.CartModalPageModule)
+  },
+  {
+    path: 'pbcash',
+    loadChildren: () => import('./pbcash/pbcash.module').then( m => m.PbcashPageModule)
+  },
 ];
 
 @NgModule({
