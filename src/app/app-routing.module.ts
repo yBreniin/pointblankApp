@@ -12,13 +12,13 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'cart-modal',
-    loadChildren: () => import('./pages/cart-modal/cart-modal.module').then( m => m.CartModalPageModule)
-  },
-  {
     path: 'pbcash',
     loadChildren: () => import('./pbcash/pbcash.module').then( m => m.PbcashPageModule)
+  },  {
+    path: 'loading',
+    loadChildren: () => import('./pages/loading/loading.module').then( m => m.LoadingPageModule)
   },
+
 ];
 
 @NgModule({
