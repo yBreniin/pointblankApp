@@ -1,8 +1,8 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>pbcash</ion-title>
-    <ion-buttons slot="end">
-      <ion-back-button text="" icon="caret-back-outline"></ion-back-button>
+    <ion-title>Point Blank Cheats</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="chevron-back-circle-outline"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -14,7 +14,7 @@
   </ion-toolbar>
 
   <div class="centro">
-    <ion-button routerLink="/loading">
+    <ion-button (click)="loading()">
       Baixar
       <ion-icon slot="end" name="cloud-download-outline"></ion-icon>
     </ion-button>
